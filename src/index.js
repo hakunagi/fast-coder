@@ -1,5 +1,5 @@
 import "./style.scss"
-let g = (v) => document.getElementById(v)
+let w = window
 let d = decodeURIComponent
 let e = encodeURIComponent
 let v = "value"
@@ -8,12 +8,12 @@ let f = [
   [d, e],
 ]
 let s = 0
-g("s").onchange = function () {
+w.s.onchange = function () {
   s = this[v]
 }
-g("D").onclick = () => {
-  g("e")[v] = f[s][0](g("d")[v])
+w.D.onclick = () => {
+  w.e[v] = f[s][0](w.d[v])
 }
-g("E").onclick = () => {
-  g("d")[v] = f[s][1](g("e")[v])
+w.E.onclick = () => {
+  w.d[v] = f[s][1](w.e[v])
 }
