@@ -1,7 +1,10 @@
 import "./style.scss"
 {
   const func = [
-    [(v) => atob(v), (v) => btoa(v)],
+    [
+      (v) => decodeURIComponent(escape(atob(v))),
+      (v) => btoa(unescape(encodeURIComponent(v))),
+    ],
     [(v) => decodeURI(v), (v) => encodeURI(v)],
   ]
   let sel = 0
