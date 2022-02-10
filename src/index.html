@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Fast Coder</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <select id="s">
+    <option value="0">base64</option>
+    <option value="1">URL</option>
+  </select>
+  <textarea id="d" placeholder="デコードする文字を入力" onfocus="this.select()"></textarea>
+  <div>
+    <button id="D">↓デコード↓</button>
+    <button id="E">↑エンコード↑</button>
+  </div>
+  <textarea id="e" placeholder="エンコードする文字を入力" onfocus="this.select()"></textarea>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>

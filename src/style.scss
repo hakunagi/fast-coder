@@ -1,0 +1,16 @@
+body {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > textarea {
+    height: 100%;
+    resize: none;
+  }
+
+  > div {
+    display: grid;
+    grid-template: ". .";
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "fast-coder",
+  "version": "0.0.0",
+  "description": "Fast encode/decode web app",
+  "repository": "https://github.com/hakunagi/fast-coder.git",
+  "author": "hakunagi <hakunagi.rei@gmail.com>",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.49.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vite-plugin-html": "^3.0.6"
+  },
+  "license": "MIT"
+}
