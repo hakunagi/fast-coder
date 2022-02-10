@@ -1,5 +1,7 @@
 import "./style.scss"
 {
+  const g = (q) => document.getElementById(q)
+  const a = (q, w, e) => document.getElementById(q).addEventListener(w, e)
   const func = [
     [
       (v) => decodeURIComponent(escape(atob(v))),
@@ -8,17 +10,13 @@ import "./style.scss"
     [(v) => decodeURI(v), (v) => encodeURI(v)],
   ]
   let sel = 0
-  document.getElementById("s").addEventListener("change", function () {
+  a("s", "change", function () {
     sel = this.value
   })
-  document.getElementById("D").addEventListener("click", () => {
-    document.getElementById("e").value = func[sel][0](
-      document.getElementById("d").value
-    )
+  a("D", "click", () => {
+    g("e").value = func[sel][0](g("d").value)
   })
-  document.getElementById("E").addEventListener("click", () => {
-    document.getElementById("d").value = func[sel][1](
-      document.getElementById("e").value
-    )
+  a("E", "click", () => {
+    g("d").value = func[sel][1](g("e").value)
   })
 }
