@@ -8,12 +8,9 @@ let f = [
   [d, e],
 ]
 let s = 0
-w.s.onchange = function () {
-  s = this[v]
-}
-w.D.onclick = () => {
-  w.e[v] = f[s][0](w.d[v])
-}
-w.E.onclick = () => {
-  w.d[v] = f[s][1](w.e[v])
-}
+
+w.s.onchange = () => (s = w.s[v])
+w.D.onclick = () => (w.e[v] = f[s][0](w.d[v]))
+w.E.onclick = () => (w.d[v] = f[s][1](w.e[v]))
+w.d.onfocus = () => w.d.select()
+w.e.onfocus = () => w.e.select()
